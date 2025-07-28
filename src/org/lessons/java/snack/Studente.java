@@ -16,4 +16,9 @@ public class Studente {
         this.cognome = cognome;
         this.eta = eta;
     }
+
+    // Metodo che restituisce una stringa concatenata dei valori
+    public String getDettagli() {
+        return nome + " " + cognome + ", " + eta + " anni";
+    }
 }
