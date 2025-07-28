@@ -14,4 +14,14 @@ public class ContoBancario {
         this.numeroConto = numeroConto;
         this.saldo = 0.0;
     }
+
+    // Metodo per depositare denaro sul conto
+    public void deposita(double importo) {
+        if (importo > 0) {
+            saldo += importo;
+            System.out.println("Deposito di " + importo + " effettuato. Saldo attuale: " + saldo);
+        } else {
+            System.out.println("Importo non valido per il deposito.");
+        }
+    }
 }
