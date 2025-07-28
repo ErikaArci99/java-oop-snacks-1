@@ -8,4 +8,10 @@ public class ContoBancario {
     // Attributi della classe ContoBancario
     private String numeroConto;
     private double saldo;
+
+    // Costruttore che accetta il numero di conto e inizializza il saldo a zero
+    public ContoBancario(String numeroConto) {
+        this.numeroConto = numeroConto;
+        this.saldo = 0.0;
+    }
 }
