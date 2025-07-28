@@ -24,4 +24,19 @@ public class ContoBancario {
             System.out.println("Importo non valido per il deposito.");
         }
     }
+
+    // Metodo per prelevare denaro dal conto
+    public void preleva(double importo) {
+        if (importo > 0 && importo <= saldo) {
+            saldo -= importo;
+            System.out.println("Prelievo di " + importo + " effettuato. Saldo attuale: " + saldo);
+        } else {
+            System.out.println("Importo non valido per il prelievo.");
+        }
+    }
+
+    // Metodo per ottenere il saldo corrente
+    public double getSaldo() {
+        return saldo;
+    }
 }
